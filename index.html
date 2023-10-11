@@ -51,6 +51,7 @@
 
         .row {
             display: flex;
+            flex-wrap: wrap;
         }
 
         .column {
@@ -66,8 +67,9 @@ h2 {
     font-size: 30pt;
 }
 
-        @media (max-width: 600px) {
-            .navbar a {
+       @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
                 float: none;
                 display: block;
                 text-align: left;
